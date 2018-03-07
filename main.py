@@ -1,8 +1,6 @@
 import gym
 import argparse
-import getch
 import time
-
 import pickle
 
 # Copy from OpenAI baseline: https://github.com/openai/baselines
