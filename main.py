@@ -109,7 +109,11 @@ if __name__ == '__main__':
         if action == '':
             return action_meaning['NOOP']
         else:
-            return action_meaning[action]
+            try:
+                return action_meaning[action]
+            except KeyError:
+                print('Invalid key')
+                return action_meaning['NOOP']
 
     def key_press(key, mod):
         global exit
